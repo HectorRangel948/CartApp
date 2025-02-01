@@ -2,6 +2,8 @@ const ProductCardView =({id, name, description, price, handler})=>{
 
   const onAddProduct =(product)=>{
     handler(product);
+    navigate('/cart');
+
   }
     return <>
            <div className="card">
